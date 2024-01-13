@@ -16,15 +16,18 @@ const QrCodeHandler = (): JSX.Element => {
   };
 
   return (
-    <div className="text-white flex min-h-screen flex-col items-center justify-center p-16">
+    <div className="text-white flex min-h-screen flex-col items-center justify-center p-8">
       {qrCodeType === "connect" && (
         <>
-          <Image
-            src="/assets/auto-connect-qr-code.png"
-            alt="QR Code"
-            width="360"
-            height="360"
-          />
+          <div className="p-10 bg-white">
+            <Image
+              src="/assets/auto-connect-qr-code.png"
+              alt="QR Code"
+              width="360"
+              height="360"
+            />
+          </div>
+
           <p className="mt-2">Auto-Connect</p>
         </>
       )}
