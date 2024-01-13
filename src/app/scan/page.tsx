@@ -1,5 +1,4 @@
 import QrCodeHandler from "@/components/organism/QrCodeHandler";
-import Image from "next/image";
 
 export default function Scan() {
   return (
